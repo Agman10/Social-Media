@@ -2,4 +2,6 @@
 
 * 24-04-2019: jag har laggt till en placeholder yill post och gjort navbaren lite bättre, laggt till en options sida men jag måste lägga till funktioner till de
 
-* 02-05-2019: idag så ska jag lägga till login funktioner så man kan skapa användare. Jag har skapat databas för user. Jag blev inte klar med login idag."# Social-Media" 
+* 02-05-2019: idag så ska jag lägga till login funktioner så man kan skapa användare. Jag har skapat databas för user. Jag blev inte klar med login idag."
+
+* 08-05-2019: Jag har fixat så att när jag lägger in användarnamn och lösenorn i login så skrvs det ut på servern.
