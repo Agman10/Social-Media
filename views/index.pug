@@ -1,7 +1,8 @@
 extends layout
+mixin user(username)
+    p logged in as #{username}
 
 block content
     h1(class="navbartext") Home
-    p Lorem ipsum lorem ipsum lorem ipsum
-
-    include post.pug
+    +user(username)
+    p Här är posts

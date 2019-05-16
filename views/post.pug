@@ -1,5 +1,14 @@
+extends layout
+mixin user(username)
+    p posting as #{username}
 
-link(rel="stylesheet" href="style.css")
+block content
+    h1(class="navbartext") post
+    +user(username)
 
-
-div(id="post") this is placeholder
+    input(type="text", placeholder="title" id="title")
+    br
+    br
+    textarea(placeholder="post text here" id="text")
+    br
+    button(onclick="post()") post

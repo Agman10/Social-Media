@@ -1,4 +1,4 @@
-const con = new Connectia("http://127.0.0.1:3000")
+const con = new Connectia()
 
 function login(){
     
@@ -11,4 +11,36 @@ function login(){
     //
     con.emit("login", cred)
     console.log(cred)
+}
+con.on("token", token =>{
+    console.log(token)
+    document.cookie = "token=" + token;
+    location.href = "/"
+})
+
+con.on("err", err =>{
+    alert(err)
+
+
+})
+
+
+
+function post(){
+    var token
+    var arr = document.cookie.split(";")
+    for(var cookie of arr){
+        if(cookie.trim().indexOf("token=") == 0){
+            token = (cookie.trim().substr(6))
+        }
+    }
+    var post = {
+        title: document.getElementById("title").value,
+        text: document.getElementById("text").value,
+        token: token
+    }
+    con.emit("post", post)
+    
+    console.log(post)
+
 }
