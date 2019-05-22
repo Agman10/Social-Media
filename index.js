@@ -118,7 +118,28 @@ con.on("login", (message, emit) => {
             })
         }})
 });
-    
+
+/*con.on("post", (message, emit) => {
+    console.log(post)
+    console.log(username)
+    console.log(req.cookies.token)
+    var token = parseToken(post.token)
+    getUser(message.username, user =>{
+        console.log(user)
+        if(user){
+            if(md5(user.password)===token.password){
+                emit("token", user.username + "_" + user.password)
+            }else {
+                emit("err", "wrong password")
+            }
+        }else{
+            connection.query(`INSERT INTO post (title, post, username) VALUES (${escape(post.title)}, ${escape(post.post)}, ${escape(user.username)})`, (error, response)=>{
+                if(!error){
+                    emit("err", "posted")
+               }
+            })
+        }})
+});*/
 
     /* //kolla om användaren finns
     loginUser(message.username, message.password, user =>{
@@ -145,24 +166,29 @@ function getUser(username, _callback){
     })
 }
 
+//posta in i databasen
 con.on("post", (post, emit)=>{
-    console.log(post)
-    console.log(username)
-    console.log(req.cookies.token)
     var token = parseToken(post.token)
     getUser(token.username, user =>{
-        console.log(user)
         if(user.password == token.password){
-            connection.query(`INSERT INTO post (title, post, username) VALUES (${escape(post.title)}, ${escape(post.post)}, ${escape(user.username)})`, (error, response)=>{
+            
+            connection.query(`INSERT INTO post (title, text, username, date) VALUES (${escape(post.title)}, ${escape(post.text)}, ${escape(user.username)}, ${Date.now()})`, (error, response)=>{
                 if(error){
                     console.log(error)
                 }else{
-                    console.log("hej")
+                    console.log("posted")
                 }
             })
         }
     })
-            
-       
-
 })
+
+function getPost(post, _callback){
+    connection.query(`SELECT * FROM post (title, text, username, date) VALUES (${escape(post.title)}, ${escape(post.text)}, ${escape(user.username)}, ${Date.now()})`, (error, response)=>{
+        if(error){
+            console.log(error)
+        } else{
+            console.log("success")
+        }
+    })
+}

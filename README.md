@@ -13,3 +13,9 @@
 * Jag planerar at fixa post funktionen
 
 * 16-05-2019: jag vet att en av problemen med post funktionen är att den inte har en funktion som gör att den körs
+
+* 22-05-2019: jag fixa så att när man skriver i post såskickas det till databasen. Det är fixat nu problemet var att "text" i min post funktion kallades "post" vilket gjorde att det inte gick
+
+
+
+tester: 

@@ -25,7 +25,6 @@ con.on("err", err =>{
 })
 
 
-
 function post(){
     var token
     var arr = document.cookie.split(";")
