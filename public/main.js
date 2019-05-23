@@ -41,5 +41,4 @@ function post(){
     con.emit("post", post)
     
     console.log(post)
-
 }

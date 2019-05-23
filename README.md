@@ -16,6 +16,9 @@
 
 * 22-05-2019: jag fixa så att när man skriver i post såskickas det till databasen. Det är fixat nu problemet var att "text" i min post funktion kallades "post" vilket gjorde att det inte gick
 
+* 23-05-2019: 
 
+tester: När jag loggar in på min sida med fel lösenord med ett använda som redan finns. så får man ett medelande att det inte funkar.
+när man skriver rätt användarnamn och lösenord så står det att man lyckades logga in och när man trycker på "login/signup" så kommer man till main page. Om man skriver ett nytt användarnamn och lösenord så skapas en användare och den läggs till i databasen.
 
-tester: 
+på post så är tanken att alla tables från databasen ska skickas till main sidan varje post skrivs ut på sidan. men databasen är för stor för att det ska gå vilket är problemet

@@ -154,6 +154,7 @@ con.on("login", (message, emit) => {
     })
  */
 
+
 function getUser(username, _callback){
     connection.query(`SELECT * FROM User WHERE upper(username) = upper(${escape(username)})`, (error, response)=>{
         if(error){
@@ -183,12 +184,19 @@ con.on("post", (post, emit)=>{
     })
 })
 
-function getPost(post, _callback){
-    connection.query(`SELECT * FROM post (title, text, username, date) VALUES (${escape(post.title)}, ${escape(post.text)}, ${escape(user.username)}, ${Date.now()})`, (error, response)=>{
+con.on("get_posts", (res, emit)=>{
+    getPosts(posts =>{
+        emit("posts", posts)
+    })
+    
+})
+
+function getPosts(_callback){
+    connection.query(`SELECT * FROM post`, (error, response)=>{
         if(error){
             console.log(error)
         } else{
-            console.log("success")
+            _callback(response)
         }
     })
 }
