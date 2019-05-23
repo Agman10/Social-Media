@@ -31,4 +31,6 @@ document.getinnerhtml by id posts
 installera paket genom att skriva
 npm install express connectia md5 mysql pug file-system cookie-parser sqlstring
 
+servern är hostad i port 3000
+
 när du är inne på sidan så loggar du in och för att posta till databasen så trycker du på navbaren och går in på post
