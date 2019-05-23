@@ -39,7 +39,6 @@ CREATE TABLE `post` (
 --
 
 INSERT INTO `post` (`id`, `username`, `title`, `text`, `date`) VALUES
-(3, 'we', 'hej', 'första posten', '1558514422204'),
 (4, 'we', 'hej', 'da', '1558514471017'),
 (5, 'Agman', 'hej', '12sAD', '1558514910718'),
 (6, 'Agman', 'sasr', 'fgdz', '1558515849137'),
