@@ -1,6 +1,6 @@
 {
     "host"     : "localhost",
-    "user"     : "agman",
-    "password" : "agman222",
+    "user"     : "username",
+    "password" : "password",
     "database" : "Social_Media"
 }
