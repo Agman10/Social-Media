@@ -1,5 +1,5 @@
 const md5 = require("md5");
-const pug = require("pug");
+const pg = require("pug");
 const fs = require("file-system");
 var path = require('path');
 const cookie = require("cookie-parser")
@@ -186,6 +186,7 @@ con.on("post", (post, emit)=>{
 
 con.on("get_posts", (res, emit)=>{
     getPosts(posts =>{
+        console.log(posts)
         emit("posts", posts)
     })
     

@@ -1,4 +1,18 @@
-Arbetprocessen
+# Titel
+Sidan heter agman.xyz Social media.
+* Inledning
+syftet med arbetet är att göra en sida där man kan lägga in posts som reddit.
+
+# Bakgrund
+Här beskriver du den teknik du har använt och motiverar detta.
+Jag använde express js eftersom Jag ville lära mig att använda det och använda Javascript iställer för PHP för att det verkar roligare och mer relevant för mig att lära sig.
+
+# planering:
+* Målgrupp:
+De som är intresserade i nintendo spel, dela memes. Men man måste inte bara gilla nintendo.
+
+
+# Arbetprocessen
 * 11-04-2019: Jag har fått igång mitt setup med pug och node js och ska börja jobba på min sida baserad på min skiss. Jag har jobbat på min navbar.
 
 * 24-04-2019: jag har laggt till en placeholder yill post och gjort navbaren lite bättre, laggt till en options sida men jag måste lägga till funktioner till de
@@ -18,15 +32,15 @@ Arbetprocessen
 * 22-05-2019: jag fixa så att när man skriver i post såskickas det till databasen. Det är fixat nu problemet var att "text" i min post funktion kallades "post" vilket gjorde att det inte gick
 
 * 23-05-2019: skriver på dokumentationen, försökte fixa post funktionen fick error.
+    på post så är tanken att alla tables från databasen ska skickas till main sidan varje post skrivs ut på sidan. Just nu är de på konsolen så man kan just nu se post via ctrl+shif+i m
 
-* tester:
-tester gjordes via selenium När jag loggar in på min sida med fel lösenord med ett använda som redan finns. så får man ett medelande att det inte funkar.
-när man skriver rätt användarnamn och lösenord så står det att man lyckades logga in och när man trycker på "login/signup" så kommer man till main page. Om man skriver ett nytt användarnamn och lösenord så skapas en användare och den läggs till i databasen.
+    Hur det ska lösas:
+    loopa igenom alla post när jag får de på clienten och använd innerhtml parsa in den
+    document.getinnerhtml by id posts
 
-på post så är tanken att alla tables från databasen ska skickas till main sidan varje post skrivs ut på sidan. Just nu är de på konsolen så man kan just nu se post via ctrl+shif+i m
+* 28-05-2019: nu skrivs posts ut på hemsidan jag använde metoden som nämndes på förra loggen.
 
-loopa igenom alla post när jag får de på clienten och använd innerhtml parsa in den
-document.getinnerhtml by id posts
+
 
 installera paket genom att skriva
 npm install express connectia md5 mysql pug file-system cookie-parser sqlstring
@@ -34,3 +48,19 @@ npm install express connectia md5 mysql pug file-system cookie-parser sqlstring
 servern är hostad i port 3000
 
 när du är inne på sidan så loggar du in och för att posta till databasen så trycker du på navbaren och går in på post
+
+# tester
+automatiserade tester gjordes via selenium När jag loggar in på min sida med fel lösenord med ett använda som redan finns. så får man ett medelande att det inte funkar.
+när man skriver rätt användarnamn och lösenord så står det att man lyckades logga in och när man trycker på "login/signup" så kommer man till main page. Om man skriver ett nytt användarnamn och lösenord så skapas en användare och den läggs till i databasen.
+testen för att logga in finns på login.side
+
+# Positiva erfarenheter
+Loginsystemet gick bra att göra och att post systemet läggs in i databasen ohc funkar, dem skrivs ut i startsidan
+# Negativa erfarenheter
+Post systemet är inte färdigt än men jag har en idé om hur jag kan göra den. När man lägger upp en post så sparas den på databasen och när man är inne på huvudsidan så när man går in på konsolen så står alla posts där så om man tar alla postst och skriver ner dem med inner html så kommer det att skrivas ut på websidan som planerat. planerade att ha en option med darkmode men hann inte med.
+
+Post systemet funkar nu men det är fortfarande en negativ erfarenhet att det inte fixades på deadlinen.
+# Sammanfattning
+
+utdaterad:
+Login och post systemet funkar vilket är bra men posts är inte hellt klart men det skrivs ut i konsolen när man är på startsidan vilket gör att det inte kommer bli så svårt att fixa det problem går att lösa via innerhtml
