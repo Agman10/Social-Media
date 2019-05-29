@@ -54,7 +54,8 @@ automatiserade tester gjordes via selenium När jag loggar in på min sida med f
 när man skriver rätt användarnamn och lösenord så står det att man lyckades logga in och när man trycker på "login/signup" så kommer man till main page. Om man skriver ett nytt användarnamn och lösenord så skapas en användare och den läggs till i databasen.
 testen för att logga in finns på login.side
 
-Jag har laggt till html index.html på validator inga problem som hittades.
+Jag har laggt till html index.html problemet var att man kan inte ha en a tag inanför ul tag så jag hadde en li tag innanför.
+På pug så skriver man li och på den andra raden så tabbar man för att a taggen ska vara inanför li.
 
 # Positiva erfarenheter
 Loginsystemet gick bra att göra och att post systemet läggs in i databasen ohc funkar, dem skrivs ut i startsidan

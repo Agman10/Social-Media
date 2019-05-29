@@ -2,6 +2,7 @@ body {
   font-family: verdana;
 }
 
+
 @media only screen and (min-width: 600px) {
   body {
     width: 60%;
