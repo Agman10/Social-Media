@@ -25,6 +25,10 @@ con.on("err", err =>{
 
 })
 
+function logout(token){
+    document.cookie = "token=";
+    location.reload();
+}
 
 function post(){
     var token

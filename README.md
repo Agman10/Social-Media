@@ -40,7 +40,7 @@ De som är intresserade i nintendo spel, dela memes. Men man måste inte bara gi
 
 * 28-05-2019: nu skrivs posts ut på hemsidan jag använde metoden som nämndes på förra loggen.
 
-
+* 29-05-2019: datum visas på posten och man kan logga ut genom att trycka på log out i navbaren
 
 installera paket genom att skriva
 npm install express connectia md5 mysql pug file-system cookie-parser sqlstring
@@ -53,6 +53,8 @@ när du är inne på sidan så loggar du in och för att posta till databasen s�
 automatiserade tester gjordes via selenium När jag loggar in på min sida med fel lösenord med ett använda som redan finns. så får man ett medelande att det inte funkar.
 när man skriver rätt användarnamn och lösenord så står det att man lyckades logga in och när man trycker på "login/signup" så kommer man till main page. Om man skriver ett nytt användarnamn och lösenord så skapas en användare och den läggs till i databasen.
 testen för att logga in finns på login.side
+
+Jag har laggt till html index.html på validator inga problem som hittades.
 
 # Positiva erfarenheter
 Loginsystemet gick bra att göra och att post systemet läggs in i databasen ohc funkar, dem skrivs ut i startsidan
