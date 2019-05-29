@@ -69,7 +69,7 @@ Post systemet är inte färdigt än men jag har en idé om hur jag kan göra den
 
 Post systemet funkar nu men det är fortfarande en negativ erfarenhet att det inte fixades på deadlinen.
 # Sammanfattning
-Jag har lärt mig en del under det här prjektet som att koppla databaser till webben och lägga in på sidan, hur man gör en login sida och post. Men även små saker som på pug varför man måste tabba delar av koden, tidigare gjorde jag det utan att tänka på varför och vad det gjorde men för att sidan skulle bli validerad så <a> vara innanför <li> jag viste inte då hur jag skulle göra det men då kom jag på att vissa saker tabbas ju på åug vilket gjorde att sidan senare kunde bli validerad.
+Jag har lärt mig en del under det här prjektet som att koppla databaser till webben och lägga in på sidan, hur man gör en login sida och post. Men även små saker som på pug varför man måste tabba delar av koden, tidigare gjorde jag det utan att tänka på varför och vad det gjorde men för att sidan skulle bli validerad så a taggen vara innanför li taggen jag viste inte då hur jag skulle göra det men då kom jag på att vissa saker tabbas ju på pug vilket gjorde att sidan senare kunde bli validerad.
 
 Jag är nöjde med hur slutprojektet blev det var en del som jag inte hann lägga till som profiler eller upvote och downvote men annars så är jag nöjd.
 
