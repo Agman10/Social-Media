@@ -57,7 +57,7 @@ testen för att logga in finns på login.side
 Jag har laggt till html index.html problemet var att man kan inte ha en a tag inanför ul tag så jag hadde en li tag innanför.
 På pug så skriver man li och på den andra raden så tabbar man för att a taggen ska vara inanför li.
 
-På pug så tänkte jag inte på vad tabba gjorde jag visste bara att det var någonting som man skulle göra men nu har jag så vet jag att tabba gör så att det som är raden under hamnar innanför taggen ovanför jag kommer förmodligen tänka tillbaks på det här i framtiden.
+På pug så tänkte jag inte på vad tabba gjorde jag visste bara att det var någonting som man skulle göra men nu så vet jag att tabba gör så att det som är raden under hamnar innanför taggen ovanför jag kommer förmodligen tänka tillbaks på det här i framtiden.
 
 # Positiva erfarenheter
 Loginsystemet gick bra att göra och att post systemet läggs in i databasen ohc funkar, dem skrivs ut i startsidan
