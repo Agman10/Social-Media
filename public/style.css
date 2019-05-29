@@ -2,7 +2,6 @@ body {
   font-family: verdana;
 }
 
-
 @media only screen and (min-width: 600px) {
   body {
     width: 60%;
@@ -48,22 +47,24 @@ body {
   font-size: 30px;
 }
 
-.posts > span{
+.posts > span {
   display: block;
 }
-
 
 .username {
   font-size: 10px;
 }
+
 .title {
   font-weight: bold;
 }
+
 .posts {
-  background: rgb(214, 214, 214);
+  background: #d6d6d6;
   margin: 10px;
   width: 60%;
   border: 1px solid black;
   border-radius: 4px;
 }
+
 /*# sourceMappingURL=style.css.map */

@@ -41,6 +41,7 @@ De som är intresserade i nintendo spel, dela memes. Men man måste inte bara gi
 * 28-05-2019: nu skrivs posts ut på hemsidan jag använde metoden som nämndes på förra loggen.
 
 * 29-05-2019: datum visas på posten och man kan logga ut genom att trycka på log out i navbaren
+21:34: gjorde så login sidan funkar på mobilen och är validerad
 
 installera paket genom att skriva
 npm install express connectia md5 mysql pug file-system cookie-parser sqlstring
@@ -57,6 +58,8 @@ testen för att logga in finns på login.side
 Jag har laggt till html index.html problemet var att man kan inte ha en a tag inanför ul tag så jag hadde en li tag innanför.
 På pug så skriver man li och på den andra raden så tabbar man för att a taggen ska vara inanför li.
 
+Alla andra sidor är också validerade
+
 På pug så tänkte jag inte på vad tabba gjorde jag visste bara att det var någonting som man skulle göra men nu så vet jag att tabba gör så att det som är raden under hamnar innanför taggen ovanför jag kommer förmodligen tänka tillbaks på det här i framtiden.
 
 # Positiva erfarenheter
@@ -66,6 +69,10 @@ Post systemet är inte färdigt än men jag har en idé om hur jag kan göra den
 
 Post systemet funkar nu men det är fortfarande en negativ erfarenhet att det inte fixades på deadlinen.
 # Sammanfattning
+Jag har lärt mig en del under det här prjektet som att koppla databaser till webben och lägga in på sidan, hur man gör en login sida och post. Men även små saker som på pug varför man måste tabba delar av koden, tidigare gjorde jag det utan att tänka på varför och vad det gjorde men för att sidan skulle bli validerad så <a> vara innanför <li> jag viste inte då hur jag skulle göra det men då kom jag på att vissa saker tabbas ju på åug vilket gjorde att sidan senare kunde bli validerad.
 
-utdaterad:
+Jag är nöjde med hur slutprojektet blev det var en del som jag inte hann lägga till som profiler eller upvote och downvote men annars så är jag nöjd.
+
+
+utdaterad sammanfattning:
 Login och post systemet funkar vilket är bra men posts är inte hellt klart men det skrivs ut i konsolen när man är på startsidan vilket gör att det inte kommer bli så svårt att fixa det problem går att lösa via innerhtml
