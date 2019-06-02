@@ -62,6 +62,9 @@ Alla andra sidor är också validerade
 
 På pug så tänkte jag inte på vad tabba gjorde jag visste bara att det var någonting som man skulle göra men nu så vet jag att tabba gör så att det som är raden under hamnar innanför taggen ovanför jag kommer förmodligen tänka tillbaks på det här i framtiden.
 
+# säkerhet
+lösenorden är encryptade så ingen kan se lösenorden på databasen, men det går att skicka kod på posten vilket behöver fixas det kan göra så att man kan förstöra sidan och man kan lägga upp bilder.
+
 # Positiva erfarenheter
 Loginsystemet gick bra att göra och att post systemet läggs in i databasen ohc funkar, dem skrivs ut i startsidan
 # Negativa erfarenheter
